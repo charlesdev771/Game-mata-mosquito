@@ -30,6 +30,23 @@ function posicaoRandomica()
     mosquito.style.position = 'absolute';
     
     document.body.appendChild(mosquito);
+
+    console.log(tamanhoAleatorio())
+}
+
+function tamanhoAleatorio()
+{
+    var classe = Math.random() * 3;
+
+    switch(classe)
+    {
+        case 0:
+            return 'mosquito1';
+        case 1:
+            return 'mosquito2';
+        case 2:
+            return 'mosquito3';
+    }
 }
 
 
